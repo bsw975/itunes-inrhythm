@@ -1,5 +1,5 @@
 {
-  "name": "classmemory",
+  "name": "itunes-inrhythm",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,13 +20,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bsw975/classmemory.git"
+    "url": "git+https://github.com/bsw975/itunes-inrhythm.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bsw975/classmemory/issues"
+    "url": "https://github.com/bsw975/itunes-inrhythm/issues"
   },
-  "homepage": "https://bsw975.github.io/classmemory"
+  "homepage": "https://bsw975.github.io/itunes-inrhythm"
 }

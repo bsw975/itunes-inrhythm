@@ -13,14 +13,14 @@ const Search = props => {
         <h1 className="title">Lookup an iTunes Album</h1>
         <form>
             <div className="form-group">
-                <label htmlFor="search">Search:</label>
+                <label htmlFor="search"></label>
                 <input
                     onChange={props.handleInputChange}
                     value={props.value}
                     name="search"
                     type="text"
                     // className="form-control"
-                    placeholder="Search iTunes"
+                    placeholder="Enter an artist"
                     id="search"
                 />
                 <br />

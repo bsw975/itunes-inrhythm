@@ -20,11 +20,9 @@ const Search = props => {
                     value={props.value}
                     name="search"
                     type="text"
-                    // className="form-control" - this takes it to 100% width
                     placeholder=" Enter an artist"
                     id="search"
                 />
-                {/* <br /> */}
                 <button
                     onClick={props.handleFormSubmit}
                     className="btn btn-primary"

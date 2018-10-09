@@ -15,7 +15,7 @@ class App extends Component {
     results: {},
     search: '',
     albums,
-    newpage
+    newpage: newpage
   };
 
   cleanupResults = resultsArray => {
@@ -37,7 +37,11 @@ class App extends Component {
         )
       }
     }
-    this.setState({ albums: uniqueAlbums, newpage: false });
+    this.setState({
+      albums: uniqueAlbums,
+      newpage: false,
+      search: ' Enter another artist'
+    });
   }
 
   searchiTunes = query => {

@@ -2,15 +2,16 @@ import React from "react";
 import "./Search.css";
 
 const Search = props => {
-    let guide;
-    console.log(props)
+    let guide, title;
     if (props.newpage) {
-        guide = ""
+        guide = '',
+        title = "To see some iTunes albums..."
     } else {
-        guide = "Click to show in Apple Mussic";
+        guide = '(Click to show in Apple Music)',
+        title = "To see some more iTunes albums..."
     }
     return (<div>
-        <h1 className="title">Lookup an iTunes Album</h1>
+        <h1 className="title">{title}</h1>
         <form>
             <div className="form-group">
                 <label htmlFor="search"></label>
@@ -19,11 +20,11 @@ const Search = props => {
                     value={props.value}
                     name="search"
                     type="text"
-                    // className="form-control"
-                    placeholder="Enter an artist"
+                    // className="form-control" - this takes it to 100% width
+                    placeholder=" Enter an artist"
                     id="search"
                 />
-                <br />
+                {/* <br /> */}
                 <button
                     onClick={props.handleFormSubmit}
                     className="btn btn-primary"

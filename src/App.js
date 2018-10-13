@@ -15,7 +15,7 @@ class App extends Component {
     results: {},
     search: '',
     albums,
-    newpage: newpage
+    newpage
   };
 
   cleanupResults = resultsArray => {

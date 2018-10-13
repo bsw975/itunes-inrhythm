@@ -3,9 +3,10 @@ import "./Search.css";
 
 const Search = props => {
     let guide, title;
+    console.log(props.newpage)
     if (props.newpage) {
         guide = '',
-        title = "To see some iTunes albums..."
+        title = "To see iTunes albums..."
     } else {
         guide = '(Click to show in Apple Music)',
         title = "To see some more iTunes albums..."
@@ -23,6 +24,7 @@ const Search = props => {
                     placeholder=" Enter an artist"
                     id="search"
                 />
+                {/* <br /> */}
                 <button
                     onClick={props.handleFormSubmit}
                     className="btn btn-primary"
